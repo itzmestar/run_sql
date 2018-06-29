@@ -20,9 +20,9 @@ def main(filenames):
             print(' ', end='')
     
         # returns output as byte string
-        #returned_output = subprocess.check_output(cmd)
+        returned_output = subprocess.check_output(cmd)
 
-        #print('Sql output:', returned_output.decode("utf-8"))
+        print('Sql output:', returned_output.decode("utf-8"))
 
         cmd.pop(len(cmd) - 1)
     
